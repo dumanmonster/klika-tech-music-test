@@ -16,7 +16,7 @@ class FilterDropdown extends React.Component {
     render() {
         let options = [];
 
-        var values = this.props.criteria.values;
+        let values = this.props.criteria.values;
         values.sort();
 
         values.forEach((value) => {

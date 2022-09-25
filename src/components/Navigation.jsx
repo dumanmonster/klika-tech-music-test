@@ -23,7 +23,7 @@ class Navigation extends React.Component {
         let buttons = [];
         let pageNumber;
 
-        var halfButtonsCount = Math.floor(buttonsCount / 2);
+        let halfButtonsCount = Math.floor(buttonsCount / 2);
 
         // The navigation behaves like WordPress pagination.
         if (this.props.currentPageNumber <= halfButtonsCount) {
@@ -44,7 +44,7 @@ class Navigation extends React.Component {
                 />);
         }
 
-        var countOfPagesLabel = buttons.length != this.props.pagesCount
+        let countOfPagesLabel = buttons.length !== this.props.pagesCount
             ? <div className="pages-count">{this.props.pagesCount} {Resources.pages}</div>
             : null;
 

@@ -12,8 +12,7 @@ class PageSizeButton extends React.Component {
     }
 
     render() {
-        // TODO: Duplicates PageNumberButton. Merge to single component.
-        const className = this.props.pageSize == this.props.currentPageSize
+        const className = this.props.pageSize === this.props.currentPageSize
             ? 'selected'
             : '';
 
